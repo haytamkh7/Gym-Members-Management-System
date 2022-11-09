@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #323437;
+    color: #f7f8fa;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.wrapper {
+    width: 100%;
+    height: 1200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-container div {
+    background-color: #e2b714;
+    border-radius: 15px;
+    padding: 1em;
+}
+
+.grid-container div:hover {
+    background-color: #e2b714;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.grid-container div a {
+    text-decoration: none;
+    color: #f7f8fa;
+    font-size: 1.4rem;
+}
+
